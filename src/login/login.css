@@ -1,0 +1,108 @@
+.login-container {
+    width: 50%; /* Assurez-vous que cela remplit correctement la moitié de votre écran */
+    background: #1F70BF; /* Couleur de fond légère comme dans l'exemple de la photo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 60px 40px;
+    box-sizing: border-box; /* Cela garantit que le padding est inclus dans la largeur */
+  }
+  
+  .login-container h2 {
+    color: #fff; /* Couleur de texte sombre pour le contraste */
+    margin-bottom: 10px; /* Espace entre le titre et les champs de saisie */
+    
+
+  }
+
+  .form-inner-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligner les éléments à la fin de l'axe principal */
+  }
+  
+  .login-container h2 {
+    color: #fff;
+    margin: 0 0 5px 0; /* Espacement uniquement en bas */
+    font-size: 50px;
+  }
+  
+  .input-group {
+    width: 100%; /* Les champs de saisie utilisent toute la largeur disponible */
+    margin-bottom: 5px; /* Espace entre chaque champ de saisie */
+  }
+  
+  .input-group input {
+    padding: 15px; /* Ajustez le padding pour correspondre à la hauteur souhaitée */
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+    font-size: 30px;
+  }
+  
+  .login-btn {
+    padding: 15px; /* Correspond au padding des champs de saisie pour une hauteur identique */
+    width: 100%; /* La largeur correspond à celle des champs de saisie */
+    border-radius: 20px;
+    border: none;
+    background-color: #0056b3; /* Couleur du bouton */
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 10px; /* Espace entre le dernier champ de saisie et le bouton */
+  }
+  
+  .login-btn:hover {
+    background-color: #003d82; /* Assombrir le bouton au survol */
+  }
+  
+  /* Si vous avez besoin de gérer les écrans plus petits */
+  @media (max-width: 768px) {
+    .login-container {
+      width: 100%; /* Prendre toute la largeur sur les petits écrans */
+      height: 60vh; /* 70% de la hauteur de l'écran pour les téléphones */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .form-inner-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Aligner les éléments à la fin de l'axe principal */
+      }
+    .login-container h2 {
+        color: #fff;
+        margin: 0 0 20px 0; /* Espacement uniquement en bas */
+    }
+    
+    .input-group input {
+      width: 100%; /* Largeur des champs de saisie ajustée */
+      padding: 12px; /* Padding pour une meilleure apparence */
+      margin-bottom: 10px;
+    }
+
+    .input-group input {
+      padding: 15px; /* Ajustez le padding pour correspondre à la hauteur souhaitée */
+      width: 100%;
+      border-radius: 20px;
+      border: 1px solid #ddd;
+      box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+      font-size: 17px;
+    }
+    
+    .login-btn {
+      width: 100%; /* Largeur du bouton ajustée pour correspondre aux champs de saisie */
+      padding: 12px; /* Padding pour une meilleure apparence */
+      margin-top: 20px; /* Espacement au-dessus du bouton */
+    }
+  }
+  
